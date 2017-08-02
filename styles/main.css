@@ -1,0 +1,160 @@
+html {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 120%;
+    background: #232526/* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #232526, #414345);
+    /* Chrome 10-25, Safari           5.1-6 */
+    background: linear-gradient(to left, #232526, #414345);
+    /* W3C, IE 10+/ Edge, Firefox 16+,         Chrome 26+, Opera 12+, Safari 7+ */
+}
+body {
+    background-color: white;
+    border: 5px solid black;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/*Social Media Icons*/
+
+header ul,
+header li {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    margin-right: .5em;
+}
+li {
+    display: inline;
+}
+div#social {
+    display: inline;
+    float: right;
+    margin-top: 2.8em;
+}
+
+/*Logo*/
+
+header ul li a img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Navigation Bar*/
+
+nav ul,
+nav li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    background: black;
+    height: 3.5em;
+    width: 100%;
+}
+nav li {
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+nav li a {
+    display: block;
+    line-height: 2.5em;
+    font-size: 125%;
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-weight: bold;
+}
+nav li a:hover {
+    color: firebrick;
+    padding: 0;
+}
+section.article {
+    margin-top: 3.5em;
+    position: relative;
+}
+h1.category {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #8b0000;
+    color: white;
+    width: 250px;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding-left: .5em;
+}
+h2.title {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #8b0000;
+    color: white;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+.article_image {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Make logo responsive*/
+
+img.logo {
+    max-width: 35%;
+    height: auto;
+}
+footer img.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer ul.social {
+    display: none;
+}
+
+/* Break Point for Mobile Phone */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    /*header img.logo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }*/
+    /*Responsive Navigation Bar*/
+    nav ul li a {
+        height: 3em;
+        font-size: 100%;
+    }
+    nav ul {
+        height: 3em;
+    }
+    h1.category {
+        display: none;
+    }
+    div#social {
+        display: none;
+    }
+    main {
+        margin-top: -3em;
+    }
+    footer img.logo {
+        display: none;
+    }
+    /*Social media icons moved down to footer*/
+    footer ul.social {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0em;
+        display: block;
+        max-width: 210px;
+    }
+}
